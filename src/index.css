@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yt-bg: #0f0f0f;
+  --color-yt-header: #0f0f0f;
+  --color-yt-sidebar: #0f0f0f;
+  --color-yt-text: #f1f1f1;
+  --color-yt-textSec: #aaaaaa;
+  --color-yt-hover: #272727;
+  --color-yt-border: #3f3f3f;
+  --color-yt-icon: #f1f1f1;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-yt-bg);
+    color: var(--color-yt-text);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    overflow-x: hidden;
+  }
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #777; }
